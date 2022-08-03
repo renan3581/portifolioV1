@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Playfair bold';
+    src: url(../assets/fonts/Playfair/PlayfairDisplaySC-Bold.ttf);
+    font-weight: bold;
+}
+
+
+.text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    font-family: 'Playfair bold';
+    background-color: rgba(0, 0, 0, 0.089);
+    backdrop-filter: blur(20px) ;
+    padding: 10px;
+    border-radius:10px ;
+    
+    h1{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    }
+
+    p{
+        color: #fff;
+        font-size: 2rem;
+        text-align: center;
+        
+    }
+}

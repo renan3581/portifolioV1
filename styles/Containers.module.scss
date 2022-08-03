@@ -1,0 +1,99 @@
+.c_MainImage{
+    background-image: url('../public/BG.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    
+
+    .c_Main{
+        display: flex;
+        width: 100vw;
+        height: 1200px;
+        background-image:linear-gradient(to bottom right, rgba(255, 255, 255, 0.267) 30%   , rgba(0, 0, 0, 0.37) 100%);
+        backdrop-filter:  blur(10px) grayscale(100%); ;
+        background-color: rgba(77, 77, 77, 0.116);
+        z-index: 2;
+        align-items: center;
+        justify-content: space-around;
+        overflow: hidden;
+        
+    }
+}  
+
+
+
+
+.separador{
+    position: absolute;
+    width: calc(100% + 5px );
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    transform: rotate(-3deg);
+    overflow: visible;
+    margin: -50px 0px 0px ;
+    z-index: 2;
+}
+
+.c_About{
+    width: 100vw;
+    height: 900px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+
+.separador2{
+    position: absolute;
+    width: calc(100% + 5px);
+    height: 100px;
+    background-color: rgb(7, 7, 7);
+    transform: rotate(-3deg);
+    overflow: visible;
+    margin: -50px 0px ;
+    z-index: 2;
+}
+
+   
+.c_Skills{
+    width: 100vw;
+    height: 900px;
+    background-color: rgb(7, 7, 7);
+    overflow: hidden;
+}
+
+
+
+.c_ContactImage{
+    
+    background-image: url('../public/BG2.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    
+    .c_Contact{
+        width: 100vw;
+        height: 900px;
+        background-color: rgba(7, 7, 7, 0.493);
+        overflow: hidden;
+        backdrop-filter: blur(10px) grayscale(100%); ;
+    }
+    
+}
+
+
+.c_Footer{
+    width: 100vw;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+
+
+
