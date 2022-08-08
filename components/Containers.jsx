@@ -6,11 +6,14 @@ import Skills from "./Skills";
 import Contact from './Contact'
 import Footer from "./Footer";
 
+
 //Next/React/Npm
 import { useInView } from 'react-intersection-observer';
 
 //styles.
 import styles from "../styles/Containers.module.scss";
+import { useRef } from "react";
+
 
 
 
@@ -28,9 +31,11 @@ export default function Container(){
     //Contatos
     const { ref: contactRef, inView: contactIsVisible } = useInView({threshold: .5,});
 
+     
+    
 
     return(
-        <>
+        <div className={styles.containerCentral}>
             <Header data={mainIsVisible} data2={aboutIsVisible} data3={skillsIsVisible} data4={contactIsVisible} />
             <div  className={styles.c_MainImage}>
                 <div ref={mainRef}  className={styles.c_Main} >
@@ -38,19 +43,21 @@ export default function Container(){
                 </div>
             </div>  
 
+            <div id="about" className={styles.anchor}></div> 
             <div  ref = {aboutRef} className={styles.c_About}>
-            <div className={styles.separador}/>
+                <div className={styles.separador}/>
                 <About />
             </div>
 
-        
+            <div id="skills" className={styles.anchor}></div>  
             <div  ref = {skillsRef} className={styles.c_Skills}>
-            <div className={styles.separador2}/>
+                <div className={styles.separador2}/>
                 <Skills />
             </div>
 
-            <div  className={styles.c_ContactImage}>
-            <div  ref = {contactRef} className={styles.c_Contact}>
+            <div id="contact" className={styles.anchor}></div>   
+            <div  className={styles.c_ContactImage} >
+            <div   ref = {contactRef}  className={styles.c_Contact}>
                 <Contact />
             </div>
             </div>
@@ -62,7 +69,7 @@ export default function Container(){
             
             
 
-        </>
+        </div>
     )
 }
 
