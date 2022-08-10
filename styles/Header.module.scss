@@ -92,7 +92,7 @@
             flex-direction: column;
             align-items: flex-end;
             overflow: visible;
-            width: 100vw;
+            width: 100%;
             position: absolute;
             left: 0;
 
@@ -100,37 +100,36 @@
 
             ul.menuOpen{
                 background-color: rgb(31, 28, 28);
+                transition: .5s;
                 display: flex;
                 flex-direction: column;
                 position: absolute;
                 overflow: hidden;
-                height: 50vw;
+                height: 33vh;
                 width: 100vw;
-                gap: 10px;
-                top: 60px;
-                padding: 5px 10px 10px 10px;
+                gap: .5rem;
+                top: 4rem;
+                padding: .6rem;
                 text-decoration: none;
                 list-style: none;
                 text-align: center;
-                transition: 1.5s ;
+                
 
 
                 li{
                     background-color: rgb(255, 255, 255);
                     color: rgb(22, 129, 252);
-                    font-size: 25px;
+                    font-size: 1.6rem;
                     text-shadow: 1px 1px  1px rgb(0, 0, 0);  
-                    padding: 15px 0px; 
+                    padding: 1rem 0px; 
                     width: 100%;
                     
                     &:hover{
                         background-color: rgb(255, 255, 255);
-                        
                     }
 
                     &.visible::after{
-                        display: none;
-                        
+                        display: none; 
                     }
                     
                     
