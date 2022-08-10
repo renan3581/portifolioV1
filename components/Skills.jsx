@@ -1,4 +1,4 @@
-import styles from '../styles/Skills.module.scss';
+import styles from '../styles/Skills1.module.scss';
 
 export default function Skills(props){
     return(
