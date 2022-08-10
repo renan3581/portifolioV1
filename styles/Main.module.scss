@@ -1,8 +1,3 @@
-@font-face {
-    font-family: 'Playfair bold';
-    src: url(../assets/fonts/Playfair/PlayfairDisplaySC-Bold.ttf);
-    font-weight: bold;
-}
 
 
 .text{
@@ -10,11 +5,12 @@
     flex-direction: column;
     text-align: center;
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
-    font-family: 'Playfair bold';
+    font-family: roboto;
     background-color: rgba(0, 0, 0, 0.089);
     backdrop-filter: blur(20px) ;
     padding: 10px;
     border-radius:10px ;
+    width: fit-content;
     
     h1{
     color: #fff;
